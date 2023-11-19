@@ -8,7 +8,7 @@ CISINTINPUT=${SAVE_DIR}/cis_interactions.txt
 BEDINPUT=/media/rokny/DATA2/michaeldefran/Muscle_HiC/5000/Dixon_2M_5000_abs.bed
 RESOLUTION=5000
 COEXP_PERCENTILE=90.0
-HIC_PERCENTILE=0.0
+HIC_PERCENTILE=0.0 # Ensure Hi-C percentile is set to 0.0 when using MaxHiC contacts so all contacts are considered significant.
 
 cd ../
 python $MAXHIC_ROOT/Main.py $BASE_DIR $SAVE_DIR
